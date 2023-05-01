@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata&display=swap');
+@import 'variables.css';
+
+/* Common styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background);
+    font-weight: 400;
+    font-style: normal;
+    font-family: Iowan;
+}
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.marquee-container {
+    overflow-x: hidden !important;
+    background-color: rgba(239, 237, 230, 0.8);
+    display: flex;
+    padding: .25rem; 
+    font-size: 1.25rem;
+}
+
+.marquee {
+    flex: 0 0 auto;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    animation-name: scroll;
+    animation-duration: 25s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-125%);
+    }
+}
+
+/* Positioning */
+
+.flex {
+    display: flex;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/* Default tag styles */
+
+textarea {
+    font-family: Iowan;
+    resize: none;
+    outline: none;
+    border: 1px solid #AEAEAE;
+    background: #F1F0E8;
+    border-radius: 3px;
+    padding: .5rem;
+}
+
+input {
+    font-family: Iowan;
+    padding: .5rem;
+    outline: none;
+    width: 100%;
+    height: 36px;
+    border: 1px solid #AEAEAE;
+    background: #F1F0E8;
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-black);
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Literata', serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Iowan Old Style', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 20px;
+}
+
+button {
+    cursor: pointer;
+    font-family: Iowan;
+}
+
+/* Main styles for buttons */
+
+button.secondary {
+    padding: .5rem 1.25rem;
+    border: 4px solid #F8FAEF;
+    box-shadow: 0 0 0 4px #AEAEAE;
+    border-radius: 3px;
+    background-color: rgba(239, 237, 230, 0.8);
+    transition: 100ms;
+}
+
+button.secondary:hover {
+    transform: scale(1.005);
+}
+
+button.secondary:active {
+    background-color: #AEAEAE;
+    color: #FFFFFF;
+    border-color: #AEAEAE;
+}
+
+button:disabled {
+    box-shadow: none;
+    border: none;
+}
+
+button:disabled:active {
+    background-color: rgba(239, 237, 230, 0.8);
+    color: #1010104D;
+    border: none;
+}
+
+button.primary {
+    position: relative;
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+button.primary::after {
+    content: url(../public/arrow.svg);
+    position: absolute;
+    right: -45px;
+    top: -10%;
+    transition: 300ms;
+    transform: translateX(0px)
+}
+
+button.primary:hover::after {
+    transform: translateX(10px);
+}
+
+/* Font-face */
+@font-face {
+    font-family: Iowan;
+    src: url(../fonts/IowanOldStyleBT-Roman.otf) format("truetype");
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 18px !important;
+    }
+
+    .container {
+        padding: 0 40px;
+    }
+
+    button.primary {
+        font-size: 1rem;
+    }
+
+    button.primary::after {
+        transform: scale(0.75);
+    }
+    button.primary:hover::after {
+        transform: scale(0.75) translateX(10px);
+    }
+
+    .marquee-container {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 30px;
+    }
+}

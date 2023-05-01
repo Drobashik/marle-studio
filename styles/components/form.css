@@ -1,0 +1,60 @@
+.form__section {
+    opacity: 0;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.form__section input {
+    height: 50px;
+    font-size: 1.25rem;
+}
+
+.form__section textarea {
+    font-size: 1.25rem;
+}
+
+.form__section.opened {
+    opacity: 1;
+    z-index: 9999999;
+}
+
+.form__section button {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.form__section form {
+    background-color: #F8FAEF;
+    padding: 30px 23px 9px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__section label {
+    color: #AEAEAE;
+}
+
+.form__section p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #AEAEAE;
+    padding: 0 2rem;
+}
+
+.form__block {
+    width: 100%;
+    align-self: flex-start;
+    margin-bottom: 1rem;
+}

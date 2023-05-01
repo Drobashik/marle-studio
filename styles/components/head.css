@@ -1,0 +1,117 @@
+@import '../variables.css';
+
+.head__header {
+    margin-top: 1rem;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+
+.head__navigation > ul {
+    margin-left: 2rem;
+    font-size: 1.25rem;
+    gap: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+}
+
+.head__navigation > ul li {
+    border-bottom: 1px solid #00000000;
+    transition: 300ms;
+}
+
+.head__navigation > ul li:hover {
+    border-bottom: 1px solid #000000;
+}
+
+.head__logo {
+    max-width: 70px;
+}
+
+.head__logo > img {
+    width: 100%;
+    min-width: 60px;
+}
+
+.head__burger {
+    display: none;
+    border-radius: 50%;
+    background-color: #F1F0E8;
+    padding: .75rem .6rem;
+    cursor: pointer;
+}
+
+.head__aside-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000080;
+    width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+    transition: 300ms;
+    opacity: 0;
+}
+
+.head__aside-bg aside {
+    background-color: #F1F0E8;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: -50%;
+    top: 0;
+    transition: 300ms;
+}
+
+.head__aside-bg aside ul {  
+    height: 100%;
+    font-size: 28px;
+    text-align: center;
+    gap: 50px;
+    position: relative;
+    padding: 0 2rem;
+}
+
+.aside__close {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    left: -44px;
+    background-color: #F8FAEF;
+    border: 1px solid #000000;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 50%;
+    max-width: 90px;
+}
+
+@media (max-width: 1200px) {
+    .head__navigation > ul {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .head__navigation {
+        display: none;
+    }
+
+    .head__burger {
+        display: block;
+    }
+
+    .head__logo {
+        max-width: 55px;
+    }
+
+    .head__aside-bg.opened {
+        z-index: 9999;
+        opacity: 1;
+        transition: 300ms;
+    }
+
+    .head__aside-bg.opened aside { 
+        right: 0%;
+        z-index: 99999;
+    }
+}

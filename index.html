@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Массажна Студія</title>
+</head>
+
+<body>
+  <header class="head__header flex center container" id="main">
+    <div class="head__logo">
+      <img src="public/logo.svg" alt="Logo">
+    </div>
+    <nav class="head__navigation">
+      <ul class="flex">
+        <li><a href="#main">Головна</a></li>
+        <li><a href="#procedures">Естетичні процедури</a></li>
+        <li><a href="#price">Ціни</a></li>
+        <li><a href="#reviews">Відгуки</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+      </ul>
+    </nav>
+    <div class="head__burger" id="burger">
+      <img src="./public/burger.svg" alt="Burger">
+    </div>
+    <div class="head__aside-bg">
+      <aside>
+        <ul class="flex column center" id="burger-list">
+          <li><a href="#main">Головна</a></li>
+          <li><a href="#procedures">Естетичні процедури</a></li>
+          <li><a href="#price">Ціни</a></li>
+          <li><a href="#reviews">Відгуки</a></li>
+          <li><a href="#contacts">Контакти</a></li>
+          <img src="./public/cross.svg" alt="Cross" class="aside__close">
+        </ul>
+      </aside>
+    </div>
+  </header>
+  <section class="hero flex center container">
+    <div class="hero__info">
+      <h1>Zemit Bionexis</h1>
+      <p>
+        Це високоефективне поєднання 5 інноваційних методик для максимального опрацювання проблемних зон: вакуумний
+        механічний роликовий вплив, RF-ліфтинг, інфрачервоне світло, LED-прогрів.
+      </p>
+      <button class="primary">
+        <a href="#price">
+          Послуги
+        </a>
+      </button>
+    </div>
+    <div class="hero__photo">
+      <img src="./public/photo_1.png" alt="Photo massage">
+    </div>
+  </section>
+  <div class="marquee-container">
+    <div class="marquee">
+      На перший візит - 50%&emsp;На перший візит - 50%&emsp;На перший візит - 50%&emsp;На перший
+      візит - 50%&emsp;На
+      перший візит - 50%&emsp;На перший візит - 50%&emsp;На перший візит - 50%&emsp;На перший візит - 50%&emsp;На
+      перший візит - 50%
+    </div>
+  </div>
+  <section class="description container">
+    <h1 class="description__title">Що таке целюліт?</h1>
+    <div class="description__text flex column">
+      <p> Утворення целюліту пов'язане з лімфостазом - здавлюванням проміжної рідини судинами, що спричиняє застій
+        лімфообігу. Це порушує кровообіг та внутрішньоклітинний обмін речовин, що впливає на рельєф шкіри, роблячи її
+        горбистою та в'ялою.</p>
+      <p>Однак, пристрій для вакуумно-роликового масажу Zemits Bionexis - це підтверджений міжнародними сертифікатами
+        комплекс, який може покращити стан шкіри та забезпечити її скульптурування з високою ефективністю.</p>
+    </div>
+  </section>
+  <section class="procedures container" id="procedures">
+    <h1 class="procedures__title">Естетичні процедури</h1>
+    <div class="procedures__cards flex center">
+      <div class="card">
+        <h2 class="card__title flex">
+          <span>01</span>
+          <span>Вакумний масаж</span>
+        </h2>
+        <div class="card__image">
+          <div class="card__front-content">
+            <img src="./public/vacuum_massage.png" alt="Вакуумний масаж">
+            <div class="card__blur">
+              <img src="./public/card_arrow.svg" alt="Card arrow" id="arrow">
+            </div>
+          </div>
+          <div class="card__back-content">
+            <ul>
+              <li>Підняття тонусу шкіри та м'язів.</li>
+              <li>Зменшення жирових відкладень і об'ємів.</li>
+              <li>Зняття м'язових спазмів та розслаблення.</li>
+              <li>Покращення обмінних процесів.</li>
+              <li>Прискорення клітинної регенерації.</li>
+              <li>Нормалізація роботи сальних і потових залоз.</li>
+              <li>Очищення пор і комедонів.</li>
+              <li>Поліпшення лімфообігу та кровообігу.</li>
+            </ul>
+            <div class="card__close-arrow">
+              <img src="./public/arrow_close.svg" alt="Close arrow" id="arrow">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="card__title flex">
+          <span>02</span>
+          <span>RF-ліфтинг</span>
+        </h2>
+        <div class="card__image">
+          <div class="card__front-content">
+            <img src="./public/rf_lifting.png" alt="RF-Ліфтинг">
+            <div class="card__blur">
+              <img src="./public/card_arrow.svg" alt="Card arrow" id="arrow">
+            </div>
+          </div>
+          <div class="card__back-content">
+            <ul>
+              <li>Це обладнання для вакуумно-роликового масажу запускає процеси регенерації, стимулюючи створення нових
+                волокон колагену.</li>
+              <li>Ліфтинг шкіри.</li>
+              <li>Зменшення розтяжок.</li>
+              <li>Зменшення ділянок целюліту.</li>
+              <li>Омолодження шкіри.</li>
+              <li>Зменшення локальних жирових відкладень.</li>
+              <li>Безболісна процедура, що не вимагає процесу відновлення.</li>
+            </ul>
+            <div class="card__close-arrow">
+              <img src="./public/arrow_close.svg" alt="Close arrow" id="arrow">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="card__title flex">
+          <span>03</span>
+          <span>Механічнo-роликовий масаж</span>
+        </h2>
+        <div class="card__image">
+          <div class="card__front-content">
+            <img src="./public/rolling_massage.png" alt="Механічнo-роликовий масаж">
+            <div class="card__blur">
+              <img src="./public/card_arrow.svg" alt="Card arrow" id="arrow" id="arrow">
+            </div>
+          </div>
+          <div class="card__back-content">
+            <p>Цей метод моделювання фігури та схуднення використовується як топ-технологія. Апарат Zemits Bionexis має
+              ролики, які масажують жирову складову дерми, тоншуючи та руйнуючи мембрани жирових клітин.
+              Це проводиться разом з вакуумом, що виводить з організму токсини та залишки метаболічних процесів.</p>
+            <div class="card__close-arrow">
+              <img src="./public/arrow_close.svg" alt="Close arrow" id="arrow">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="card__title flex">
+          <span>04</span>
+          <span>Енергія інфра-червоного світла</span>
+        </h2>
+        <div class="card__image">
+          <div class="card__front-content">
+            <img src="./public/infra_red.png" alt="Енергія інфра-червоного світла">
+            <div class="card__blur">
+              <img src="./public/card_arrow.svg" alt="Card arrow" id="arrow">
+            </div>
+          </div>
+          <div class="card__back-content">
+            <ul>
+              <li>Генерування червоних світлових променів позитивно впливає на всі структурні шари шкіри. Вони не тільки
+                покращують колір та рельєф, а й підвищують рівень зволоженості й пружності шкіри.</li>
+              <li>Щільна шкіра внаслідок прискорення процесу створення волокон еластину і колагену.</li>
+              <li>Зміцнення й тонізації стінок судин.</li>
+            </ul>
+            <div class="card__close-arrow">
+              <img src="./public/arrow_close.svg" alt="Close arrow" id="arrow">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="price container" id="price">
+    <h1 class="price__title">Ціни</h1>
+    <h3 class="price__table-title">Вакуумно-роликовий масаж + RF ліфтинг + LED</h3>
+    <div class="price__table">
+      <div class="price__row">
+        <div class="price__column">
+          <span>Обличчя</span>
+        </div>
+        <div class="price__column">
+          <span>25 хв</span>
+        </div>
+        <div class="price__column">
+          <span>600 ₴</span>
+        </div>
+      </div>
+      <div class="price__row">
+        <div class="price__column">
+          <span>Декольте та шия</span>
+        </div>
+        <div class="price__column">
+          <span>25 хв</span>
+        </div>
+        <div class="price__column">
+          <span>600 ₴</span>
+        </div>
+      </div>
+      <div class="price__row">
+        <div class="price__column">
+          <span>Обличчя + декольте + шия + підборіддя</span>
+        </div>
+        <div class="price__column">
+          <span>45 хв</span>
+        </div>
+        <div class="price__column">
+          <span>1000 ₴</span>
+        </div>
+      </div>
+      <div class="price__row">
+        <div class="price__column">
+          <span>Живіт та боки</span>
+        </div>
+        <div class="price__column">
+          <span>30 хв</span>
+        </div>
+        <div class="price__column">
+          <span>700 ₴</span>
+        </div>
+      </div>
+      <div class="price__row">
+        <div class="price__column">
+          <span>Передня поверхня стегон</span>
+        </div>
+        <div class="price__column">
+          <span>20 хв</span>
+        </div>
+        <div class="price__column">
+          <span>500 ₴</span>
+        </div>
+      </div>
+      <div class="price__row">
+        <div class="price__column">
+          <span>Задня поверхня стегон та сідниці</span>
+        </div>
+        <div class="price__column">
+          <span>30 хв</span>
+        </div>
+        <div class="price__column">
+          <span>700 ₴</span>
+        </div>
+      </div>
+      <div class="price__row">
+        <div class="price__column">
+          <span>Руки</span>
+        </div>
+        <div class="price__column">
+          <span>20 хв</span>
+        </div>
+        <div class="price__column">
+          <span>500 ₴</span>
+        </div>
+      </div>
+      <div class="price__row">
+        <div class="price__column">
+          <span>Спина (ділянка лопаток)</span>
+        </div>
+        <div class="price__column">
+          <span>20 хв</span>
+        </div>
+        <div class="price__column">
+          <span>500 ₴</span>
+        </div>
+      </div>
+      <div class="price__row">
+        <div class="price__column">
+          <span>Гомілки (задня поверхня)</span>
+        </div>
+        <div class="price__column">
+          <span>20 хв</span>
+        </div>
+        <div class="price__column">
+          <span>500 ₴</span>
+        </div>
+      </div>
+      <div class="price__row">
+        <div class="price__column">
+          <span>Все тіло</span>
+        </div>
+        <div class="price__column">
+          <span>90 хв</span>
+        </div>
+        <div class="price__column">
+          <span>1900 ₴</span>
+        </div>
+      </div>
+    </div>
+    <h3 class="price__table-title">Вакуумно-роликовий масаж</h3>
+    <div class="price__table">
+      <div class="price__row">
+        <div class="price__column">
+          <span>Все тіло</span>
+        </div>
+        <div class="price__column">
+          <span>35 хв</span>
+        </div>
+        <div class="price__column">
+          <span>&numsp;600 ₴</span>
+        </div>
+      </div>
+      <div class="price__row">
+        <div class="price__column">
+          <span>Обличчя + декольте + шия + підборіддя</span>
+        </div>
+        <div class="price__column">
+          <span>35 хв</span>
+        </div>
+        <div class="price__column">
+          <span>&numsp;550 ₴</span>
+        </div>
+      </div>
+      <div class="price__discount">
+        <span>При купіві 10 процедур, знижка <strong>-25%</strong></span>
+      </div>
+    </div>
+    <div class="flex center">
+      <button class="button secondary" id="form-btn">Записатися на процедуру</button>
+    </div>
+  </section>
+  <div class="form__section">
+    <div class="bg"></div>
+    <form>
+      <div class="form__block flex column">
+        <label for="name">Ваше ім’я *</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div class="form__block">
+        <label for="phone">Ваш номер телефону *</label>
+        <input type="text" name="phone" id="phone">
+      </div>
+      <div class="form__block flex column">
+        <label for="message">Коментар</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      </div>
+      <button class="secondary" id="send-btn">Надіслати</button>
+      <p>Залиште заявку, наш менеджер Вам зателефонує найближчим часом*</p>
+    </form>
+  </div>
+  <section class="reviews container" id="reviews">
+    <h1 class="reviews__title container">Відгуки</h1>
+    <div class="swiper-container flex center">
+      <div class="swiper-button" id="prev">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="56" viewBox="0 0 28 56" fill="none">
+          <path d="M26.5 54.8181L1 28.159L26.5 1.49994" stroke="#333333" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-quote">
+              <img src="./public/quotte.svg" alt="Quote">
+            </div>
+            <div class="swiper-block flex center">
+              <div class="swiper-text">
+                Як на мене масаж на Zemits Bionexis - це не тільки про схуднення та покращення якості шкіри, а і
+                найкращий спосіб відпочити та розслабитися.
+                Мій результат - 4,5 кг та 28 см в об’ємі. Із впевненістю можу радити цю процедуру.
+              </div>
+              <div class="swiper-img">
+                <img src="./public/person_3.png" alt="Person">
+              </div>
+            </div>
+            <div class="swiper-author">
+              <span>Катерина</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-quote">
+              <img src="./public/quotte.svg" alt="Quote">
+            </div>
+            <div class="swiper-block flex center">
+              <div class="swiper-text">
+                Я отримала прекрасні враження від масажу, особливо оцінила техніки апаратного масажу та професіоналізм
+                масажиста. Результати після закінчення курсу вражають -4 кг та як результат супер підтягнуте тіло!
+              </div>
+              <div class="swiper-img">
+                <img src="./public/person_1.png" alt="Person">
+              </div>
+            </div>
+            <div class="swiper-author">
+              <span>Наталія</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-quote">
+              <img src="./public/quotte.svg" alt="Quote">
+            </div>
+            <div class="swiper-block flex center">
+              <div class="swiper-text">
+                -5 кг- результат від 12 сеансів.
+                Дуже задоволена процедурою, бо прикладаєш мінімум зусиль та отримуєш максимум результату, майстер
+                Валентина знає свою роботу!)
+              </div>
+              <div class="swiper-img">
+                <img src="./public/person_2.png" alt="Person">
+              </div>
+            </div>
+            <div class="swiper-author">
+              <span>Єлизавета</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button" id="next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="56" viewBox="0 0 28 56" fill="none">
+          <path d="M1 1.5L26.5 28.1591L1 54.8182" stroke="#333333" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+  </section>
+  <footer class="foot" id="contacts">
+    <div class="container">
+      <div class="foot__wrapper">
+        <div class="foot__logo">
+          <img src="./public/logo.svg" alt="Logo">
+        </div>
+        <div class="foot__location">
+          <ul>
+            <li>
+              <span><img src="./public/location_logo.svg" alt="Location"></span>
+              <span>мiсто Київ, вул. Єжи Ґедройця 6</span>
+            </li>
+            <li>
+              <span><img src="./public/phone_logo.svg" alt="Phone"></span>
+              <span>+38(097) 616 00 98</span>
+            </li>
+            <li>
+              <span><img src="./public/instagram_logo.svg" alt="Instagram"></span>
+              <span>marle.bodystudio</span>
+            </li>
+          </ul>
+        </div>
+        <div class="foot__big-logo">
+          <img src="./public/big_logo.svg" alt="Big logo">
+        </div>
+        <div class="foot__menu">
+          <nav>
+            <ul>
+              <li><a href="#main">Головна</a></li>
+              <li><a href="#procedures">Естетичні процедури</a></li>
+              <li><a href="#price">Ціни</a></li>
+              <li><a href="#reviews">Відгуки</a></li>
+              <li><a href="#contacts">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="foot__copyright">
+          <p><span><img src="./public/copyright.svg" alt=""></span>Copyright. All rights reserved.<br />Created by Liza
+            Matsiuk.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
