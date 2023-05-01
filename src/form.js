@@ -13,12 +13,15 @@ formButton.addEventListener('click', () => {
     sendBtn.disabled = false;
     sendBtn.textContent = 'Надіслати';
 
+    document.querySelector('html').style.overflowY = 'hidden';
     formBg.classList.toggle('opened');
 })
 
 formBg.addEventListener('click', (event) => {
-    if (event.target.className === 'form__section opened')
+    if (event.target.className === 'form__section opened') {
         formBg.classList.toggle('opened');
+        document.querySelector('html').style.overflowY = 'auto';
+    }
 })
 
 sendBtn.addEventListener('click', (event) => {
@@ -42,5 +45,9 @@ sendBtn.addEventListener('click', (event) => {
         messageInput.value = '';
         sendBtn.disabled = true;
         sendBtn.textContent = 'Надіслано';
+        setTimeout(() => {
+            formBg.className = 'form__section';
+            document.querySelector('html').style.overflowY = 'auto';
+        }, 2000)
     });
 })
