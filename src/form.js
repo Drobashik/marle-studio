@@ -4,6 +4,7 @@ const formBg = document.querySelector('.form__section');
 const nameInput = document.getElementById('name');
 const phoneInput = document.getElementById('phone');
 const messageInput = document.getElementById('message');
+const crossForm = document.querySelector('.form__cross');
 
 const sendBtn = document.getElementById('send-btn');
 
@@ -22,6 +23,11 @@ formBg.addEventListener('click', (event) => {
         formBg.classList.toggle('opened');
         document.querySelector('html').style.overflowY = 'auto';
     }
+})
+
+crossForm.addEventListener("click", () => {
+    formBg.classList.toggle('opened');
+    document.querySelector('html').style.overflowY = 'auto';
 })
 
 sendBtn.addEventListener('click', (event) => {
