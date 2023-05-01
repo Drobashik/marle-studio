@@ -33,6 +33,7 @@
 
 .card__image {
     transition: 1s;
+    -webkit-transition: 1s;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     width: 100%;
