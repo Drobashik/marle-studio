@@ -37,6 +37,8 @@
     -webkit-transform-style: preserve-3d;
     width: 100%;
     position: relative;
+    -webkit-perspective: 900000px;
+    perspective: 900000px;
 }
 
 .card__image img {
