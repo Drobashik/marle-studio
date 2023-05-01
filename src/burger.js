@@ -28,6 +28,8 @@ crossBurger.addEventListener('click', () => {
 });
 
 asideBackground.addEventListener('click', (event) => {
-    if (event.target.className === 'head__aside-bg opened')
+    if (event.target.className === 'head__aside-bg opened') {
         asideBackground.className = 'head__aside-bg';
+        document.querySelector('html').style.overflowY = 'auto';
+    }
 });
