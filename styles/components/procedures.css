@@ -85,6 +85,7 @@
     background-color: #F1F0E8;
     border-radius: 5px;
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,6 +113,7 @@
 
 .card.animate .card__image {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 @media (max-width: 1200px) {
