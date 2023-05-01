@@ -11,6 +11,8 @@
 .card {
     max-width: 365px;
     width: calc((100% - 60px) / 4);
+    -webkit-perspective: 900000px;
+    perspective: 900000px;
 }
 
 .card h2 {
@@ -35,8 +37,6 @@
     -webkit-transform-style: preserve-3d;
     width: 100%;
     position: relative;
-    -webkit-perspective: 900000px;
-    perspective: 900000px;
 }
 
 .card__image img {
