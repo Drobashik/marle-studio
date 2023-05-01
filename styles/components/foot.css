@@ -35,7 +35,11 @@
 .foot__location ul li span:first-child {
     display: inline-block;
     height: 21px;
-    margin-right: .5rem;
+    width: 30px;
+}
+
+.foot__location ul li span img {
+    width: 20px;
 }
 
 .foot__big-logo {
@@ -106,5 +110,9 @@
             'logo nav'
             'location location'
             'copyright copyright';
+    }
+
+    .foot__location ul li span img {
+        width: 15px;
     }
 }
