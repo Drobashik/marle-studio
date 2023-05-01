@@ -71,10 +71,10 @@
     height: 99%;
     backface-visibility: hidden;
     visibility: visible;
-    -webkit-perspective: 0;
-    -webkit-transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
     position: relative;
+    perspective: 1000px;
+	-webkit-perspective: 1000px;
 }
 
 .card__back-content {
@@ -93,6 +93,8 @@
     flex-direction: column;
     padding: 4rem 1rem;
     font-size: 1rem;
+    perspective: 1000px;
+	-webkit-perspective: 1000px;
 }
 
 .card__close-arrow {
