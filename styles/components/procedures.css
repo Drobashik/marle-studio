@@ -85,16 +85,14 @@
     height: 99%;
     background-color: #F1F0E8;
     border-radius: 5px;
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 4rem 1rem;
     font-size: 1rem;
-    perspective: 1000px;
-	-webkit-perspective: 1000px;
 }
 
 .card__close-arrow {
@@ -115,8 +113,8 @@
 }
 
 .card.animate .card__image {
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
 }
 
 @media (max-width: 1200px) {
