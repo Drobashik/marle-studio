@@ -4,7 +4,7 @@
 
 .price::before {
     content: "";
-    background-image: url(../../public/flower.svg);
+    background-image: url(../../assets/flower.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 500px;
