@@ -170,7 +170,7 @@ button.primary {
 }
 
 button.primary::after {
-    content: url(../public/arrow.svg);
+    content: url(../assets/arrow.svg);
     position: absolute;
     right: -45px;
     top: -10%;
@@ -185,7 +185,7 @@ button.primary:hover::after {
 /* Font-face */
 @font-face {
     font-family: Iowan;
-    src: url(../fonts/IowanOldStyleBT-Roman.otf) format("truetype");
+    src: url(./fonts/IowanOldStyleBT-Roman.otf) format("truetype");
 }
 
 @media (max-width: 1200px) {
