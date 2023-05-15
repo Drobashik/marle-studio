@@ -118,6 +118,7 @@
 .card.animate .card__image {
     -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
+    pointer-events: none;
 }
 
 @media (max-width: 1500px) {
