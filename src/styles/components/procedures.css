@@ -102,6 +102,7 @@
     cursor: pointer;
     align-self: flex-end;
     justify-self: end;
+    pointer-events: all;
 }
 
 .card__back-content ul li::before {
